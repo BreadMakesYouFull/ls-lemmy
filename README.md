@@ -1,14 +1,13 @@
 # ls-lemmy-subs
 
-List lemmy subscriptions for backup sharing or creating a bespoke feed
+List lemmy communities and subscriptions.
 
 # Usage
 
 ```
-ls-lemmy-subs.py [-h] instance username
+usage: ls-lemmy [-h] instance [username]
 
-Export lemmy subscriptions Login as user and export subscriptions. Could be useful incase your instance goes down, to share with another user, or to create a
-bespoke feed.
+List lemmy communities for an instance, or login to view your subscriptions.
 
 positional arguments:
   instance    Lemmy instance URL
@@ -21,7 +20,10 @@ options:
 Example:
 
 ```
-./ls-lemmy-subs.py http://lemmy.world myusername
+./ls-lemmy http://lemmy.world
+# Logs list communities belonging to that instance
+
+./ls-lemmy http://lemmy.world myusername
 # prompted for password
 # Logs list of subscription URLs alphabetically by community name.
 ```

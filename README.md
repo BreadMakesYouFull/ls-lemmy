@@ -1,4 +1,4 @@
-# ls-lemmy-subs
+# ls-lemmy
 
 List lemmy communities and subscriptions.
 
